@@ -1,0 +1,73 @@
+#map {
+  width: 100%;
+  height: 100vh;
+}
+:root {
+    --bg: #f7f9fc;
+    --nav: #0b5cff;
+    --text: #0b2233;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: system-ui, sans-serif;
+}
+
+/* plein écran + centrage vertical */
+.container {
+    height: 100vh; /* prend toute la hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Carte blanche centrée */
+.card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Conteneur des boutons */
+.menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Gros carrés */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 220px;   /* taille du carré → règle ici pour plus gros */
+    height: 220px;
+    aspect-ratio: 1/1;
+
+    background: var(--nav);
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 20px; /* retire si tu veux des carrés 100% droits */
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #0046ca;
+}
+
+/* Responsive : empile les carrés sur petit écran */
+@media (max-width: 700px) {
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
