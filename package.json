@@ -1,0 +1,24 @@
+{
+  "name": "projet_osm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Parc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeliggg/Projet_Osm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aeliggg/Projet_Osm/issues"
+  },
+  "homepage": "https://github.com/aeliggg/Projet_Osm#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}
